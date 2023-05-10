@@ -5,8 +5,8 @@ def test_cria_produto():
     mock_id = 1
     mock_nome_do_produto = "PlayStation 5"
     mock_nome_da_empresa = "Sony"
-    mock_data_de_fabricacao = "11/12/2020"
-    mock_data_de_validade = "12/11/2030"
+    mock_data_de_fabricacao = "2020-11-12"
+    mock_data_de_validade = "2030-11-12"
     mock_numero_de_serie = "123456"
     mock_instrucoes_de_armazenamento = "Não colocar em local úmido"
 
