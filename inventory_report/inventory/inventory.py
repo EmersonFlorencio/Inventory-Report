@@ -2,6 +2,7 @@ from inventory_report.reports.simple_report import SimpleReport
 from inventory_report.reports.complete_report import CompleteReport
 from inventory_report.importer.csv_importer import CsvImporter
 from inventory_report.importer.json_importer import JsonImporter
+from inventory_report.importer.xml_importer import XmlImporter
 
 
 class Inventory:
@@ -11,6 +12,8 @@ class Inventory:
             data = CsvImporter.import_data(file_doc)
         if file_doc.endswith(".json"):
             data = JsonImporter.import_data(file_doc)
+        if file_doc.endswith(".xml"):
+            data = XmlImporter.import_data(file_doc)
         return data
 
     @staticmethod
